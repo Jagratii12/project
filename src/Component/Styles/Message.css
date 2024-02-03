@@ -1,0 +1,120 @@
+/* src/styles/MainBody.css */
+
+/* Common styles for all screen sizes */
+.main-body {
+    display: flex;
+    width: 20vw;
+    background-color: darkgreen;
+    color: white;
+    margin-bottom: 10px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .starred a {
+    color: gold; /* Adjust as needed */
+  }
+  
+  .left-pane {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 10px; /* Adjust as needed */
+    padding: 8px;
+  }
+  
+  .left-pane img {
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
+  
+  .right-pane {
+    flex: 1;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .subject {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 1024px) {
+    .main-body {
+      width: 20vw;
+      height: fit-content; /* Adjust component width for tablets */
+    }
+  
+    .left-pane img {
+      width: 30px; /* Adjust image size for tablets */
+      height: 30px; /* Adjust image size for tablets */
+    }
+  
+    .subject,
+    .body-text {
+      font-size: x-small;
+    }
+  
+    .name-tag {
+      font-size: medium;
+      font-weight: 600;
+    }
+  
+    .date-time {
+      font-size: small;
+    }
+  }
+  
+  /* Media query for tablets */
+  @media (max-width: 768px) {
+    .main-body {
+      width: 30vw;
+      height: fit-content; /* Adjust component width for tablets */
+    }
+  
+    .left-pane img {
+      width: 30px; /* Adjust image size for tablets */
+      height: 30px; /* Adjust image size for tablets */
+    }
+    .subject{
+        font-size: x-small;
+    }
+    .body-text{
+        font-size: x-small;
+    }
+    .name-tag{
+      font-size: medium;
+      font-weight: 600;
+    }
+    .date-time{
+      font-size: small;
+    }
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 480px) {
+    .main-body {
+      width: 30vw; /* Adjust component width for mobile devices */
+    }
+  
+    .left-pane img {
+      width: 20px; /* Adjust image size for mobile devices */
+      height: 20px; /* Adjust image size for mobile devices */
+    }
+  
+    .starred a {
+      font-size: xx-small; /* Adjust font size for mobile devices */
+    }
+  
+    .subject {
+      font-size: x-small; /* Adjust font size for mobile devices */
+    }
+  }
+  

@@ -1,0 +1,48 @@
+/* selected.css */
+
+.selected-message-content {
+    border: 2px solid black; /* Set border properties */
+    padding: 10px; /* Add padding for content inside the border */
+    margin-top: 20px; /* Add margin to separate from other content */
+    height: 80vh;
+    width: 50vw;
+  }
+  .unselected-message-content{
+    border: 2px solid black; /* Set border properties */
+    padding: 10px; /* Add padding for content inside the border */
+    margin-top: 20px; /* Add margin to separate from other content */
+    height: 80vh;
+    width: 50vw;
+    text-align: center;
+  }
+  
+  .selected-message-content img {
+    width: 40px; /* Adjust image size as needed */
+    height: 40px; /* Adjust image size as needed */
+    border-radius: 50%;
+    margin-right: 10px; /* Add margin to separate image from text */
+  }
+  
+  .selected-message-content .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .selected-message-content .name-tag {
+    font-weight: bold;
+  }
+  
+  /* Media query for screens with a width of 768px */
+  @media (max-width: 768px) {
+    .selected-message-content {
+      width: 40vw; /* Make the component full width on smaller screens */
+      box-sizing: border-box; 
+      /* Include padding and border in the width calculation */
+    }
+  
+    .selected-message-content img {
+      width: 30px; /* Adjust image size for smaller screens */
+      height: 30px; /* Adjust image size for smaller screens */
+    }
+  }
+  

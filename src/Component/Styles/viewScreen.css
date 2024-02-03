@@ -1,0 +1,46 @@
+/* App.css */
+
+.app-container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 20px 0px 10px; /* Add margin for spacing */
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 20vw;
+  gap: 20px;
+}
+
+.detail-view-container {
+  margin-left: 20px;
+  flex-grow: 1; /* Allow the detail-view-container to grow and take available space */
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .message-container {
+    width: 35%; /* Full width for tablets */
+  }
+
+  .detail-view-container {
+    margin-left: 20px; /* Remove left margin for tablets */
+  }
+}
+
+/* Media query for screens with a width of 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .app-container {
+    flex-direction: column; /* Stack components vertically on screens from 769px to 1024px */
+  }
+
+  .message-container {
+    width: 50%; /* Full width for screens between 769px and 1024px */
+  }
+
+  .detail-view-container {
+    margin-left: 0; /* Remove left margin for screens between 769px and 1024px */
+  }
+}

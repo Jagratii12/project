@@ -1,0 +1,6 @@
+.icon-rows{
+    transition: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}

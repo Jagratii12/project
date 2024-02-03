@@ -1,0 +1,64 @@
+/* IconColumn.css */
+
+.icon-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #cac6c6;
+  width: 4vw;
+  margin-right: 5px;
+}
+
+.icon {
+  font-size: 24px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, padding 0.2s ease, border-radius 0.3s ease; /* Adjusted transitions */
+  border-radius: 8px; /* Initial border-radius for icons */
+}
+
+.icon:hover,
+.icon.selected {
+  background-color: darkgreen;
+  color: white;
+  padding: 8px; /* Increased padding for the green shade on hover or selection */
+  border-radius: 50%; /* Rounded corners on hover or selection */
+}
+
+.icon:hover {
+  transform: none; /* Remove the transform property */
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .icon-column {
+    width: 5vw; /* Adjust column width for tablets */
+  }
+
+  .icon {
+    font-size: 20px; /* Adjust font size for tablets */
+    margin: 8px; /* Adjust margin for tablets */
+  }
+
+  .icon:hover,
+  .icon.selected {
+    padding: 6px; /* Adjust padding for tablets */
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .icon-column {
+    width: 5vw; /* Adjust column width for mobile devices */
+  }
+
+  .icon {
+    font-size: 16px; /* Adjust font size for mobile devices */
+    margin: 6px; /* Adjust margin for mobile devices */
+  }
+
+  .icon:hover,
+  .icon.selected {
+    padding: 4px; /* Adjust padding for mobile devices */
+  }
+}
